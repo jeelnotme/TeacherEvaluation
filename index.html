@@ -34,11 +34,6 @@ function evaluateTeacher() {
   const teacher = document.getElementById("teacher").value.trim();
   const score = Number(document.getElementById("score").value);
 
-  if (!teacher || isNaN(score)) {
-    document.getElementById("result").textContent = "Please enter valid data!";
-    return;
-  }
-
   if (score >= 50) {
     document.getElementById("result").textContent = `${teacher}: Mayu gd!`;
   } else {
